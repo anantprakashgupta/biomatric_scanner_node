@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Fingerprint Capture</title>
+</head>
+<body>
+  <button onclick="captureFingerprint()">Capture Fingerprint</button>
+  <script>
+    const { ipcRenderer } = require('electron');
+
+    function captureFingerprint() {
+      // Send a message to the main process to capture the fingerprint
+      const imageName = ipcRenderer.sendSync('capture-fingerprint');
+      alert(`Finger image saved as ${imageName}`);
+      console.log(imageName);
+    }
+  </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+{
+  "name": "node-usb-example-electron",
+  "version": "1.0.0",
+  "description": "Example Electron application for node-usb",
+  "author": "Rob Moran <thegecko@github.com>",
+  "license": "MIT",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "clean": "git clean -dfx"
+  },
+  "devDependencies": {
+    "electron": "^25.3.2"
+  },
+  "dependencies": {
+    "fingerprintjs2": "^2.1.4",
+    "module": "^1.2.5",
+    "noble": "^1.9.1",
+    "node-fingerprint": "^1.1.0",
+    "node-web-bluetooth": "^1.2.1",
+    "node-wifi": "^2.0.16",
+    "usb": "^2.9.0",
+    "webbluetooth": "^3.0.3",
+    "wifi-control": "^2.0.1"
+  }
+}
